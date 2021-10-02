@@ -3,6 +3,10 @@ import Button from '../Components/Reusable/Button';
 import './App.css';
 import '../Components/Neumorphic/Neumo.css'
 import NeumoButton from '../Components/Neumorphic/Button/NeumoButton';
+import NeumoButtonDark from '../Components/Neumorphic/Button/NeumoButtonDark';
+import Toggle from '../Components/Neumorphic/Toggle/Toggle';
+import Toggles from '../Components/Neumorphic/Toggle/Toggles';
+import NeumoSwitch from '../Components/Neumorphic/Switch/NeumoSwitch';
 const App = () => {
   const [width, setWidth] = useState(0)
   useEffect(() => {
@@ -10,7 +14,8 @@ const App = () => {
   }, [])
   return (
     <div className="App-header">
-        <NeumoButton />
+        <NeumoSwitch isChecked={false} />
+        <NeumoSwitch isChecked={true} />
     </div>
   );
 }

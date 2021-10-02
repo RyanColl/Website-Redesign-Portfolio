@@ -1,0 +1,55 @@
+.switches {
+  display: flex;
+  justify-content: space-around;
+}
+#switch {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.slider {
+  display: block;
+  width: 100px;
+  height: 3rem;
+  background: linear-gradient(180deg, #E3EBF5 0%, #E3EBF5 100%);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+}
+
+.slider::after {
+  content: "";
+  width: 30px;
+  height: 30px; 
+  background-color: #9BAACF;
+  position: absolute;
+  border-radius: 70px;
+  top: 9px;
+  left: 9px;
+  transition: all 0.5s;
+}
+
+#switch:checked + .slider:after {
+  left: calc(100% - 10px);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+#switch:checked + .slider {
+    background: linear-gradient(180deg, #84A9FE 0%, #396FF9 100%);
+    transition: all 0.5s;
+}
+#switch:checked + .slider::after {
+    background-color: #e8f5f7;
+    transition: all 0.5s;
+}
+
+.slider:active:after {
+  width: 16px;
+  transition: all 0.5s;
+}
+
+/* Rectangle 31 */
+

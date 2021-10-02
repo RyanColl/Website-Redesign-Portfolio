@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
 .App {
   text-align: center;
 }
 .App-header {
-  background-color: #312C2C;
+  background-color: #E3EBF5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

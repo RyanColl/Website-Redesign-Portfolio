@@ -3,8 +3,23 @@
     height: 60px;
     background-color: #396FF9;
     background-image: linear-gradient(160deg, #396FF9 0%, #1c4fcf 100%, #1a45b3 100%);
+    box-shadow:  8px 4px 8px #aaaaaa, -8px -4px 8px #E3EBF5;
     color: white;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 300;
     font-style: bold;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.neumo-button-dark {
+    width: 200px;
+    height: 60px;
+    background-color: #E3EBF5;
+    color: #9DABD0;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: bold;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.neumo-button:active, .neumo-button-dark:active {
+    box-shadow:  16px 16px 18px #aaaaaa inset, -16px -16px 18px #E3EBF5 inset;
 }
