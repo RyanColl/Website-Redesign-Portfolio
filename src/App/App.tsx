@@ -6,6 +6,7 @@ import NeumoButton from '../Components/Neumorphic/Button/NeumoButton';
 import NeumoButtonDark from '../Components/Neumorphic/Button/NeumoButtonDark';
 import Toggle from '../Components/Neumorphic/Toggle/Toggle';
 import NeumoSwitch from '../Components/Neumorphic/Switch/NeumoSwitch';
+import SphereSwitch from '../Components/Neumorphic/SphereSwitch/SphereSwitch';
 const App = () => {
   const [width, setWidth] = useState(0)
   useEffect(() => {
@@ -13,7 +14,8 @@ const App = () => {
   }, [])
   return (
     <div className="App-header">
-        <Toggle />
+        <SphereSwitch />
+        <SphereSwitch id={2} isChecked={true} />
     </div>
   );
 }

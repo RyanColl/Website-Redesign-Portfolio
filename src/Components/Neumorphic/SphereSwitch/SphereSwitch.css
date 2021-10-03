@@ -1,0 +1,26 @@
+.sphere-switch-1, .sphere-switch-2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.inner-sphere-1, .inner-sphere-2 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+.sphere-inset {
+    box-shadow: 2px 1px 2px #7e7e7e inset, -2px -1px 2px #ffffff inset;
+    transition: all 0.5s;
+}
+.sphere-set {
+    box-shadow: 2px 1px 2px #7e7e7e, -2px -1px 2px #ffffff;
+    transition: all 0.5s;
+}
