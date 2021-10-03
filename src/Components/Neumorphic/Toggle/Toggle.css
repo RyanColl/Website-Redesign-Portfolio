@@ -40,12 +40,6 @@
     font-weight: 700;
     transition: .3s ease;
 }
-.material-icons:hover {
-    color: #396FF9;
-}
-#toggle-1:checked + .material-icons, #toggle-2:checked + .material-icons {
-    color: #396FF9;
-}
 #toggle-1:checked + .toggle-label-1, #toggle-2:checked + .toggle-label-2 {
     box-shadow:  2px 1px 2px #7e7e7e inset, -2px -1px 2px #ffffff inset;
 }
