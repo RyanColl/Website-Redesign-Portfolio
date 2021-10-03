@@ -5,7 +5,6 @@ import '../Components/Neumorphic/Neumo.css'
 import NeumoButton from '../Components/Neumorphic/Button/NeumoButton';
 import NeumoButtonDark from '../Components/Neumorphic/Button/NeumoButtonDark';
 import Toggle from '../Components/Neumorphic/Toggle/Toggle';
-import Toggles from '../Components/Neumorphic/Toggle/Toggles';
 import NeumoSwitch from '../Components/Neumorphic/Switch/NeumoSwitch';
 const App = () => {
   const [width, setWidth] = useState(0)
@@ -14,8 +13,7 @@ const App = () => {
   }, [])
   return (
     <div className="App-header">
-        <NeumoSwitch id={1} isChecked={true} />
-        <NeumoSwitch id={2} />
+        <Toggle />
     </div>
   );
 }

@@ -18,3 +18,35 @@
     width: 100%;
     height: 100%;
 }
+#toggle-1, #toggle-2 {
+    width: 0rem;
+    display: flex;
+    justify-content: center;
+
+}
+.toggle-label-1, .toggle-label-2 {
+    box-shadow:  2px 1px 2px #7e7e7e, -2px -1px 2px #ffffff;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.material-icons {
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: .3s ease;
+}
+.material-icons:hover {
+    color: #396FF9;
+}
+#toggle-1:checked + .material-icons, #toggle-2:checked + .material-icons {
+    color: #396FF9;
+}
+#toggle-1:checked + .toggle-label-1, #toggle-2:checked + .toggle-label-2 {
+    box-shadow:  2px 1px 2px #7e7e7e inset, -2px -1px 2px #ffffff inset;
+}
+
