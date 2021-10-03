@@ -14,8 +14,8 @@ const App = () => {
   }, [])
   return (
     <div className="App-header">
-        <NeumoSwitch isChecked={false} />
-        <NeumoSwitch isChecked={true} />
+        <NeumoSwitch id={1} isChecked={true} />
+        <NeumoSwitch id={2} />
     </div>
   );
 }

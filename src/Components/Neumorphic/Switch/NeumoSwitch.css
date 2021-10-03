@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-around;
 }
-#switch {
+#switch-1, #switch-2 {
   width: 0;
   height: 0;
   visibility: hidden;
 }
-.slider {
+.slider-1, .slider-2 {
   display: block;
   width: 100px;
   height: 3rem;
@@ -19,7 +19,7 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
 }
 
-.slider::after {
+.slider-1::after, .slider-2::after {
   content: "";
   width: 30px;
   height: 30px; 
@@ -31,22 +31,22 @@
   transition: all 0.5s;
 }
 
-#switch:checked + .slider:after {
+#switch-1:checked + .slider-1:after, #switch-2:checked + .slider-2:after {
   left: calc(100% - 10px);
   transform: translateX(-100%);
   transition: all 0.5s;
 }
 
-#switch:checked + .slider {
+#switch-1:checked + .slider-1, #switch-2:checked + .slider-2 {
     background: linear-gradient(180deg, #84A9FE 0%, #396FF9 100%);
     transition: all 0.5s;
 }
-#switch:checked + .slider::after {
+#switch-1:checked + .slider-1::after, #switch-2:checked + .slider-2::after {
     background-color: #e8f5f7;
     transition: all 0.5s;
 }
 
-.slider:active:after {
+.slider-1:active:after, .slider-2:active:after  {
   width: 16px;
   transition: all 0.5s;
 }
