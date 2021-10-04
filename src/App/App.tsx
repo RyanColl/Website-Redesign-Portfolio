@@ -3,6 +3,8 @@ import Button from '../Components/Reusable/Button';
 import './App.css';
 import '../Components/Neumorphic/Neumo.css'
 import NeumoExample from '../Components/Neumorphic/NeumoExample';
+import NeumoBoard from '../NeumoBoard/NeumoBoard';
+import NeumorphicComponents from '../Pages/NeumorphicComponents/NeumorphicComponents';
 
 const App = () => {
   const [width, setWidth] = useState(0)
@@ -11,7 +13,7 @@ const App = () => {
   }, [])
   return (
     <div className="App-header">
-        <NeumoExample />
+        <NeumorphicComponents />
     </div>
   );
 }

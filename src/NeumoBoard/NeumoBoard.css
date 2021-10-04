@@ -1,0 +1,92 @@
+.neumo-board {
+    margin: 50px;
+    background: #E3EBF5;
+    box-shadow: 10px 6px 20px #000000, -10px -6px 20px rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    background: #E3EBF5;
+    box-shadow: 10px 6px 4px rgba(0, 0, 0, 0.1), -10px -6px 10px #EEF2F8;
+    border-radius: 50px;
+    width: 80%;
+    margin: 50px 0px;
+    align-content: center;
+    justify-items: center;
+}
+.neumo-display {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px 0px;
+}
+.neumo-board-switches {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.neumo-board-checkboxes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.neumo-board-spheres {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.neumo-board-button {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-self: center;
+    margin-top: 10px;   
+}
+.neumo-board-button-dark {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    align-self: center;
+    margin-top: 10px;
+}
+.neumo-board-clock {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: flex;
+    align-items: center;
+}
+.neumo-board-play-button{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    display: flex;
+    align-items: center;
+}
+.neumo-board-tabs {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+    margin-top: 10px;
+}
+.neumo-board-icon-buttons {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.neumo-board-search {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: center;
+    margin-top: 10px;
+}
+.neumo-board-typebar {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    align-self: center;
+    margin-top: 10px;
+}
+.neumo-board-slider {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    align-self: center;
+}
+
