@@ -1,0 +1,22 @@
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.icon-button:active {
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25), inset -4px -2px 4px #FFFFFF;
+    transition: all .3s ease;
+}
+.icon-button:hover .icon {
+    color: #396FF9;
+}
+.icon {
+    margin-top: 3px;
+    color: #9DABD0;
+}

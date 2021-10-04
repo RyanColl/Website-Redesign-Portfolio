@@ -9,6 +9,7 @@ import SphereSwitch from '../Components/Neumorphic/SphereSwitch/SphereSwitch';
 import NeumoTabs from '../Components/Neumorphic/Tabs/NeumoTabs';
 import SearchBar from '../Components/Neumorphic/Search/SearchBar';
 import TypeBar from '../Components/Neumorphic/TypeBar/TypeBar';
+import IconButton from '../Components/Neumorphic/IconButton/IconButton'
 const App = () => {
   const [width, setWidth] = useState(0)
   useEffect(() => {
@@ -21,8 +22,12 @@ const App = () => {
         <Toggle />
         <Toggle id={2} isChecked={true} />
         <SearchBar />
-        <TypeBar />
+        <TypeBar /> 
+        <IconButton />
+        <IconButton icon={'supervised_user_circle'}/>
+        <IconButton icon={'settings'} />
         <NeumoSwitch />
+       
         <NeumoSwitch id={2} isChecked={true} />
         <NeumoButton />
         <NeumoButton darkThemed={true} />
