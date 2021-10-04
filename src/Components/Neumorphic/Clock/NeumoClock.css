@@ -1,0 +1,79 @@
+.neumo-clock {
+    justify-self: center;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hand {
+    position: absolute;
+    transform-origin: bottom;
+    bottom: 6rem;
+    border-radius: .2rem;
+    z-index: 200;
+  }
+
+  .hours {
+    width: .4rem;
+    height: 3.2rem;
+    background: #BEC8E4;
+  }
+  
+  .minutes {
+    width: .4rem;
+    height: 4.6rem;
+    background: #9BAACF;
+  }
+  .seconds {
+    width: .2rem;
+    height: 5.2rem;
+    background: #396FF9;
+  }
+  .point {
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: #396FF9;
+    z-index: 300;
+  }
+
+  .marker {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset 4px 2px 4px rgba(0, 0, 0, 0.25), inset -4px -2px 4px #FFFFFF;
+  }
+  .marker::after {
+    content: '';
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25), inset -1px -1px 1px #FFFFFF;
+    border-radius: 50%;
+    top: 20%;
+    left: 20%;
+    filter: blur(1px);
+  }
+  .marker__1, .marker__2, .marker__3, .marker__4 {
+    position: absolute;
+    border-radius: .1rem;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25), inset -1px -1px 1px #FFFFFF;
+  }
+  .marker__1, .marker__2 {
+    width: .2rem;
+    height: .6rem;
+    left: 5.6rem;
+  }
+  .marker__3, .marker__4 {
+    width: .6rem;
+    height: .2rem;
+    top: 5.6rem;
+  }
+  .marker__1 { top: 2%; } 
+  .marker__2 { top: 98%; transform: translateY(-.6rem); }
+  .marker__3 { left: 2%; }
+  .marker__4 { left: 98%; transform: translateX(-.6rem); }

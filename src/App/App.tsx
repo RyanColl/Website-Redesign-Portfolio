@@ -11,6 +11,7 @@ import SearchBar from '../Components/Neumorphic/Search/SearchBar';
 import TypeBar from '../Components/Neumorphic/TypeBar/TypeBar';
 import IconButton from '../Components/Neumorphic/IconButton/IconButton'
 import NeumoSlider from '../Components/Neumorphic/Slider/Slider'
+import NeumoClock from '../Components/Neumorphic/Clock/NeumoClock';
 const App = () => {
   const [width, setWidth] = useState(0)
   useEffect(() => {
@@ -18,7 +19,7 @@ const App = () => {
   }, [])
   return (
     <div className="App-header">
-        <SphereSwitch />
+        {/* <SphereSwitch />
         <SphereSwitch id={2} isChecked={true} />
         <Toggle />
         <Toggle id={2} isChecked={true} />
@@ -32,7 +33,8 @@ const App = () => {
         <NeumoSwitch id={2} isChecked={true} />
         <NeumoButton />
         <NeumoButton darkThemed={true} />
-        <NeumoTabs />
+        <NeumoTabs /> */}
+        <NeumoClock />
     </div>
   );
 }
