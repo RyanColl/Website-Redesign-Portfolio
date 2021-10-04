@@ -12,6 +12,7 @@ import TypeBar from '../Components/Neumorphic/TypeBar/TypeBar';
 import IconButton from '../Components/Neumorphic/IconButton/IconButton'
 import NeumoSlider from '../Components/Neumorphic/Slider/Slider'
 import NeumoClock from '../Components/Neumorphic/Clock/NeumoClock';
+import PlayButton from '../Components/Neumorphic/PlayButton/PlayButton';
 const App = () => {
   const [width, setWidth] = useState(0)
   useEffect(() => {
@@ -35,6 +36,7 @@ const App = () => {
         <NeumoButton darkThemed={true} />
         <NeumoTabs /> */}
         <NeumoClock />
+        <PlayButton />
     </div>
   );
 }

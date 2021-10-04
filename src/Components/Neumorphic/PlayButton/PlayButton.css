@@ -1,0 +1,67 @@
+.neumo-play {
+    display: grid;
+    width: 96px;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: grid;
+    grid-template-rows: 1fr;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+}
+.circle__btn {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #396FF9;
+    z-index: 300;
+    background: none;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+#play, #pause {font-size: 3.2rem;}
+.circle-inset {
+    box-shadow: inset 4px 2px 4px rgba(0, 0, 0, 0.25), inset -4px -2px 4px #FFFFFF !important;
+}
+.circle__back-1, .circle__back-2 {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    filter: blur(1px);
+    z-index: 100;
+}
+.circle__back-1 {
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+    background: linear-gradient(to bottom right, #E2EBF5 0%, #E2EBF5 100%);
+    animation: waves 4s linear infinite;
+}
+.circle__back-2 {
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+    animation: waves 4s linear infinite;
+}
+.paused { 
+    animation-play-state: paused;
+}
+
+
+@keyframes waves {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
