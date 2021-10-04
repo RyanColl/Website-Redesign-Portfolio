@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import './NeumoSwitch.css';
 const NeumoSwitch = (props: any) => {
     const [isChecked, setChecked] = useState(props.isChecked || false)
+    const id = props.id || 1;
     return (
         <div className='neumo-switch'>
             <input 
             type="checkbox" 
-            name={`switch-${props.id}`} 
-            id={`switch-${props.id}`} 
+            name={`switch-${id}`} 
+            id={`switch-${id}`} 
             checked={isChecked} 
-            onClick={() => {isChecked ? setChecked(false) : setChecked(true)}} />
-            {/* @ts-ignore */}
-            <label for={`switch-${props.id}`} className={`slider-${props.id}`} ></label>  
+            onClick={() => {isChecked ? setChecked(false) : setChecked(true)}} 
+            onChange={(e) => {console.log(e.target)}}
+            />
+            
+            <label htmlFor={`switch-${id}`} className={`slider-${id}`} ></label>  
         </div>
     )
 }

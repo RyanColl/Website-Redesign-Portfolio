@@ -1,0 +1,29 @@
+.neumo-typebar {
+    display: flex;
+    align-items: center;
+    width: 236px;
+    height: 48px;
+    transition: .3s ease;
+    
+}
+.typebar__input {
+    width: 20.4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    padding-right: 3.4rem;
+    padding-left: 1.4rem;
+    box-shadow: inset 4px 2px 4px rgba(0, 0, 0, 0.25), inset -4px -2px 4px #FFFFFF;
+    background: none;
+    color: #9DABD0;
+    transition: .3s ease;
+}
+.typebar__input::placeholder {
+    color: #9DABD0;
+}
+.typebar__input:focus {
+    outline: none;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25), -4px -2px 4px #FFFFFF;
+    transition: .3s ease;
+}

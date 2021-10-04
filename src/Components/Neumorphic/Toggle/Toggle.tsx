@@ -15,10 +15,9 @@ const Toggle = (props: any) => {
             type="checkbox" 
             checked={isChecked} 
             onClick={() => {isChecked ? setChecked(false) : setChecked(true)}} 
-            
+            onChange={(e) => {console.log(e.target)}}
             />
-            {/*@ts-ignore */}
-            <label className={`toggle-label-${id}`} for={`toggle-${id}`}>
+            <label className={`toggle-label-${id}`} htmlFor={`toggle-${id}`}>
             <i id={`icon-${id}`} 
             className="material-icons" 
             style={isChecked ? {color: '#396FF9'} : {color}}
